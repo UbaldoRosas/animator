@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <style>
+        .animated {
+            opacity: 0;
+            transform: translateX(20px);
+            transition: all 0.6s ease-in-out;
+        }
+
+        .go {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+
+        .spacer {
+            height: 100vh;
+        }
+    </style>
+    <div class="spacer"></div>
+
+    <div class="animated">
+        <p>Elemento animado</p>
+    </div>
+    
+    <div class="spacer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
